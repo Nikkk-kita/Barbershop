@@ -1,0 +1,110 @@
+.about {
+   padding-top: 120px;
+
+   @media (max-width: $md) {
+      padding-top: 60px;
+   }
+}
+
+.about-photos {
+   margin-top: 60px;
+   display: grid;
+   grid-template-areas:
+      "photo1 photo1 photo2 photo3"
+      "photo1 photo1 photo2 photo3"
+      "photo1 photo1 photo6 photo6"
+      "photo4 photo5 photo6 photo6"
+      "photo4 photo5 photo6 photo6";
+   grid-gap: 20px;
+
+   @media (max-width: $md) {
+      grid-template-areas:
+         "photo1 photo1"
+         "photo2 photo3"
+         "photo4 photo5"
+         "photo6 photo6";
+      grid-gap: 15px;
+   }
+
+   @media (max-width: $sm) {
+      grid-gap: 10px;
+   }
+
+   &_photo {
+      & img {
+         display: block;
+         width: 100%;
+      }
+   }
+}
+
+.photo1 {
+   grid-area: photo1;
+}
+
+.photo2 {
+   grid-area: photo2;
+}
+
+.photo3 {
+   grid-area: photo3;
+}
+
+.photo4 {
+   grid-area: photo4;
+}
+
+.photo5 {
+   grid-area: photo5;
+}
+
+.photo6 {
+   grid-area: photo6;
+}
+
+.about-buttons {
+   padding-top: 60px;
+   max-width: 678px;
+   margin: 0px auto;
+   display: flex;
+   justify-content: space-between;
+
+   @media (max-width: $md) {
+      flex-direction: column;
+      align-items: center;
+   }
+
+
+   &_masters {
+      & span {
+         position: relative;
+         z-index: 2;
+      }
+   }
+
+   &_instagram {
+      padding: 1.55em 2.857em;
+      font-family: 'Playfair Display';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+      align-items: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: none;
+      cursor: pointer;
+      border: 1px solid $font-secondary-color;
+      transition: all 0.3s ease-in-out;
+
+      @media (max-width: $md) {
+         margin-top: 20px;
+      }
+
+      &:hover {
+         border: 1px solid #e68b4b;
+         border-radius: 15px;
+
+      }
+   }
+}

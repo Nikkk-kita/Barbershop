@@ -1,0 +1,58 @@
+.my-modal {}
+
+.modal-content {
+   background: $secondary-color;
+   font-family: 'Fira Sans';
+   color: $font-secondary-color;
+   overflow: auto;
+}
+
+.my-modal-header {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 100%;
+   border-bottom: 1px solid $third-color;
+}
+
+.my-modal-title {}
+
+.my-modal-body {}
+
+.my-modal-top {
+   display: flex;
+   justify-content: flex-start;
+   align-items: end;
+
+   &_img {
+
+      flex: 0 0 30%;
+
+      @media (max-width: $lg) {
+         flex: 0 0 40%
+      }
+
+      & img {
+         border-radius: 20px;
+         display: block;
+         width: 100%;
+      }
+   }
+
+   &_description {}
+}
+
+.description-list {
+   font-style: italic;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 110%;
+   color: #B7AAA2;
+
+   & li {}
+}
+
+.my-modal-bottom {
+   margin-top: 20px;
+
+   &_text {}
+}

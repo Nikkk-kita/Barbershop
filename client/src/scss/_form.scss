@@ -1,0 +1,159 @@
+.form {
+   margin-top: -145px;
+
+   @media (max-width: $sm) {
+      margin-top: -220px;
+   }
+}
+
+.form-container {
+   background: $third-color;
+}
+
+.form-block {
+   font-family: 'Fira Sans';
+   padding: 70px 0px;
+   max-width: 880px;
+   margin: 0 auto;
+
+   @media (max-width: $sm) {
+      padding: 40px 0px;
+   }
+}
+
+.form-title {
+   font-family: 'Playfair Display';
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 133%;
+   text-align: center;
+   color: #000000;
+}
+
+.form-sub-title {
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 143%;
+   text-align: center;
+   color: #3B322D;
+
+}
+
+.form-group {
+   margin-top: 35px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   @media (max-width: $lg) {
+      align-items: end;
+   }
+
+   @media (max-width: $sm) {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   & input {
+      padding: 20px 22px;
+      background: $third-color;
+      border: 1px solid #000;
+      display: block;
+      width: 323px;
+      height: 68px;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 135%;
+      color: $font-primary-color;
+
+      @media (max-width: $md) {
+         width: 280px;
+      }
+
+      @media (max-width: $sm) {
+         width: 100%;
+      }
+
+
+      &:nth-child(1) {
+         margin-right: 20px;
+
+         @media (max-width: $lg) {
+            margin-bottom: 20px;
+         }
+      }
+
+      &:focus-visible {
+         outline: 1px solid #000;
+      }
+   }
+}
+
+.form-inputs {
+   display: flex;
+   justify-content: space-between;
+
+   @media (max-width: $lg) {
+      flex-direction: column;
+   }
+
+   @media (max-width: $sm) {
+      width: 100%;
+   }
+}
+
+.form-button {
+   @media (max-width: $sm) {
+      width: 100%;
+      margin-top: 20px;
+   }
+}
+
+.submit-button {
+   background: #000 !important;
+
+   @media (max-width: $sm) {
+      width: 100%;
+   }
+
+
+   &:before {
+      background: $third-color;
+   }
+
+   & span {
+      position: relative;
+      z-index: 2;
+   }
+}
+
+.checkbox-block {
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 134.09%;
+   color: $font-secondary-color;
+   margin-top: 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   & input {
+      margin-right: 7px;
+      display: block;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+   }
+
+   &_text {
+      & a {
+         color: $font-secondary-color;
+         text-decoration: underline !important;
+
+         &:hover {
+            color: #000;
+         }
+      }
+   }
+}

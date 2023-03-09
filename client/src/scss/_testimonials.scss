@@ -1,0 +1,102 @@
+.testimonials {
+   padding-top: 120px;
+   padding-bottom: 120px;
+
+   @media (max-width: $md) {
+      padding-top: 60px;
+      padding-bottom: 40px;
+   }
+}
+
+.slider {
+   margin-top: 60px;
+   padding-bottom: 25px;
+}
+
+.slider-item {
+   display: flex;
+   flex-direction: column;
+
+   &_img {
+
+      & img {
+         display: block;
+         width: 100%;
+      }
+   }
+
+   &_title {
+      font-family: 'Fira Sans';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+      color: $font-primary-color;
+      margin-top: 24px;
+   }
+
+   &_description {
+      flex: 1 1 auto;
+      margin-top: 24px;
+      font-family: 'Fira Sans';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #FFFFFF;
+   }
+
+   &_button {
+      margin-top: 24px;
+      background: none;
+      border: none;
+      font-family: 'Fira Sans';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 135%;
+      color: $third-color;
+      text-align: left;
+      cursor: pointer;
+   }
+
+}
+
+.prev-slide {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 10;
+   top: calc(26% - 15px);
+   left: 20px;
+   width: 30px;
+   height: 30px;
+   background: rgba(239, 231, 226, 0.4);
+   border-radius: 50%;
+   cursor: pointer;
+
+   & img {
+      display: block;
+      width: 12px;
+
+   }
+}
+
+.next-slide {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 10;
+   top: calc(26% - 15px);
+   right: 20px;
+   width: 30px;
+   height: 30px;
+   background: rgba(239, 231, 226, 0.4);
+   border-radius: 50%;
+   cursor: pointer;
+
+   & img {
+      display: block;
+      width: 12px;
+
+   }
+}
